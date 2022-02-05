@@ -20,14 +20,14 @@ class MyWidget(QtWidgets.QWidget):
 
     self.button.clicked.connect(self.magic)
 
-  
+  @QtCore.Slot()
   def magic(self):
     self.text.setText(random.choice(self.hello))
 
 if __name__ == '__main__':
   app = QtWidgets.QApplication([])
 
-
+  
   widget = MyWidget
   widget.resize(800, 600)
   widget.show()
