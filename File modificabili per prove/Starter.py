@@ -65,7 +65,7 @@ def frame2():
       "border-radius: 40px;"
   )
 
-
+frame1()
 
 Window.show()
 sys.exit(app.exec_())
