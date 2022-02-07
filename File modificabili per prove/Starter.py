@@ -14,7 +14,7 @@ Window = QWidget()
 Window.setWindowTitle("Programma per le supplenze")
 Window.setFixedWidth(1000)
 Window.move(500, 100)
-Window.setStyleSheet("Background: #161219; ")
+Window.setStyleSheet("Background: #FFFFFF; ")
 
 grid = QGridLayout()
 
@@ -39,13 +39,13 @@ def frame1():
   button = QPushButton("Inserisci il giorno")
   button.setCursor(QCursor(QtCore.Qt.PointingHandCursor))
   button.setStyleSheet(
-      "*{border: 6px solid '#0FEEE6';" +
+      "*{border: 6px solid '#787878';" +
       "border-radius: 45px;" +
       "font-size: 40px;" +
-      "color: 'LightBlue';" +
+      "color: 'Black';" +
       "padding: 20px 0;" +
       "margin: 50px 250px;}" +
-      "*:hover{background: '#0FEEE6';}"
+      "*:hover{background: '#787878';}"
   )
   widgets["button"].append(button)
 
@@ -65,7 +65,7 @@ def frame2():
       "border-radius: 40px;"
   )
 
-
+frame1()
 
 Window.show()
 sys.exit(app.exec_())
