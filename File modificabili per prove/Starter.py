@@ -27,7 +27,7 @@ Window.setLayout(grid)
 def frame1():
 
   #Display logo
-  image = QPixmap("Progetto_Supplenze.png")
+  image = QPixmap("logotrivia.png")
   logo = QLabel()
   logo.setPixmap(image)
   logo.setAlignment(QtCore.Qt.AlignCenter)
