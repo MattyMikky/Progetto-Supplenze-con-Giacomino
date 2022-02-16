@@ -5,7 +5,7 @@ from kivy.uix.image import Image
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 
-class SayHello(App):
+class Programma_Supplenze(App):
     def build(self):
         self.window = GridLayout()
         #add widgets to window
@@ -13,4 +13,4 @@ class SayHello(App):
         return self.window
 
 if __name__ == "__main__":
-    SayHello().run()
+    Programma_Supplenze().run()
