@@ -1,4 +1,4 @@
-#C:\Users\matti\OneDrive\Desktop\Visual Studio Code Projects\Progetto Supplenze con Giacomino\Progetto_Supplenze_Flask\app.py
+#C:\Users\matti\OneDrive\Desktop\Visual Studio Code Projects\Progetto Supplenze con Giacomino\Progetto_Supplenze_Flask
 from flask import Flask, render_template, request, flash
 
 
