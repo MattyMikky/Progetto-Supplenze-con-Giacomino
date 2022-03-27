@@ -12,7 +12,6 @@
   </head>
   <body style="background-color: 	#303030">
     <nav class="navbar navbar-dark bg-dark">
-   <!-- Navbar content -->
       <div class="container-fluid">
         <a class="navbar-brand" href="/"
         <img src="Progetto.png" alt=""
