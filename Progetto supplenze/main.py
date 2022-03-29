@@ -1,5 +1,5 @@
 # print("Hello Mondus") a caso ahhaha
-#from database import quelche è...
+# from database import quelche è...
 
 '''
 I professori che hanno ore di supplenza sono:
@@ -32,7 +32,7 @@ dom2 = int(input("In che ore serve la supplenza? "))
 
 par = 0
 
-#Controllo giorno inserito e somma con il numero dell'ora
+# Controllo giorno inserito e somma con il numero dell'ora
 if dom1 == "Lunedì" or dom1 == "lunedì" or dom1 == "Lunedi" or dom1 == "lunedi":
     par = 10 + dom2
 elif dom1 == "Martedì" or dom1 == "martedì" or dom1 == "Martedi" or dom1 == "martedi":
@@ -44,46 +44,46 @@ elif dom1 == "Giovedì" or dom1 == "giovedì" or dom1 == "Giovedi" or dom1 == "g
 elif dom1 == "Venerdì" or dom1 == "venerdì" or dom1 == "Venerdi" or dom1 == "venerdi":
     par = 50 + dom2
 else:
-    print ("Il giorno inserito non va bene")
+    print("Il giorno inserito non va bene")
 
-#Stampa a video dei professori disponibili per la supplenza
-print ("")
+# Stampa a video dei professori disponibili per la supplenza
+print("")
 if par in Agazzi:
-	print ("Agazzi")
+    print("Agazzi")
 if par in Amantea:
-	print ("Amantea")
+    print("Amantea")
 if par in Benes:
-	print ("Benes")
+    print("Benes")
 if par in Bonini:
-	print ("Bonini")
+    print("Bonini")
 if par in Brigante:
-	print ("Brigante")
+    print("Brigante")
 if par in Cecchetto:
-	print ("Cecchetto")
+    print("Cecchetto")
 if par in Chiandussi:
-	print ("Chiandussi")
+    print("Chiandussi")
 if par in Coronica:
-	print ("Coronica")
+    print("Coronica")
 if par in Costessi:
-	print ("Costessi")
+    print("Costessi")
 if par in Epicoco:
-	print ("Epicoco")
+    print("Epicoco")
 if par in Faganel:
-	print ("Faganel")
+    print("Faganel")
 if par in Floris:
-	print ("Floris")
+    print("Floris")
 if par in Iacono:
-	print ("Iacono")
+    print("Iacono")
 if par in Magno:
-	print ("Magno")
+    print("Magno")
 if par in SelvaMirizzi:
-	print ("Selva Mirizzi")
+    print("Selva Mirizzi")
 if par in SelvaPatrizia:
-	print ("Selva Patrizia")
+    print("Selva Patrizia")
 if par in Ziccolella:
-	print ("Ziccolella")
+    print("Ziccolella")
 
-print ("")
+print("")
 
 '''
 I professori che hanno ore in compresenza sono:
@@ -131,97 +131,98 @@ VescoviZanin = [15, 31, 32, 33, 51, 52]
 VescoviManià = [21, 22, 24, 25, 41, 42, 43]
 VescoviCrachi = [53, 54]
 
-dom3 = str(input("Vuoi anche sapere quali professori stanno facendo lezioni in compresenza? "))
-print ("")
+dom3 = str(input(
+    "Vuoi anche sapere quali professori stanno facendo lezioni in compresenza? "))
+print("")
 
 # Controllo se la risposto inserita va bene
 while dom3 != "Sì" and dom3 != "Si" and dom3 != "sì" and dom3 != "si" and dom3 != "No" and dom3 != "no":
-	print ('La risposta inserita non va bene. Inserire "si" o "no" ')
-	dom3 = str(input()).upper()
+    print('La risposta inserita non va bene. Inserire "si" o "no" ')
+    dom3 = str(input()).upper()
 
 # Se viene inserito "No" il programma finisce
 if dom3 == "No" or dom3 == "no":
-	print ("Ok. Buona giornata ")
+    print("Ok. Buona giornata ")
 
 # Stampa a video dei professori che stanno facendo lezioni in compresenza
 if dom3 == "Sì" or dom3 == "Si" or dom3 == "sì" or dom3 == "si":
-	if par in AcetoFurlan:
-		print("Aceto e Furlan")
-	if par in DiMattiaVinci:
-		print("Di Mattia e Vinci")
-	if par in DiMattiaLapira:
-		print("Di Mattia e Lapira")
-	if par in DiMattiaApollo:
-		print("Di Mattia e Apollo")
-	if par in DreossiCrachi:
-		print("Dreossi e Crachi")
-	if par in DreossiColautti:
-		print("Dreossi e Colautti")
-	if par in DreossiZanin:
-		print("Dreossi e Zanin")
-	if par in DreossiAlbaneseMichele:
-		print("Dreossi e Albanese Michele")
-	if par in DreossiFaraone:
-		print("Dreossi e Faraone")
-	if par in MaggioErsetig:
-		print("Maggio e Ersetig")
-	if par in MaggioLeonardi:
-		print("Maggio e Leonardi")
-	if par in MaggioCacciatore:
-		print("Maggio e Cacciatore")
-	if par in MarchesanMatteaBuiatti:
-		print("Marchesan Mattea e Buiatti")
-	if par in MarchesanMatteaGardenal:
-		print("Marchesan Mattea e Gardenal")
-	if par in MarchesanMatteaCrachi:
-		print("Marchesan Mattea e Crachi")
-	if par in MarchesanMatteaColautti:
-		print("Marchesan Mattea e Colautti")
-	if par in MianiBertogna:
-		print("Miani e Bertogna")
-	if par in MianiTerrosi:
-		print("Miani e Terrosi")
-	if par in MianiVassallo:
-		print("Miani e Vassallo")
-	if par in MianiStano:
-		print("Miani e Stano")
-	if par in MorelliFaraone:
-		print("Morelli e Faraone")
-	if par in MorelliGardenal:
-		print("Morelli e Gardenal")
-	if par in MorelliManià:
-		print("Morelli e Manià")
-	if par in MorelliBuiatti:
-		print("Morelli e Buiatti")
-	if par in NazzarenoLapira:
-		print("Nazzareno e Lapira")
-	if par in NazzarenoMarchesanMauro:
-		print("Nazzareno e Marchesan Mauro")
-	if par in NazzarenoManiacco:
-		print("Nazzareno e Maniacco")
-	if par in PierdomenicoApollo:
-		print("Pierdomenico e Apollo")
-	if par in PierdomenicoVinci:
-		print("Pierdomenico e Vinci")
-	if par in PierdomenicoLapira:
-		print("Pierdomenico e Lapira")
-	if par in PierdomenicoMarchesanMauro:
-		print("Pierdomenico e Marchesan Mauro")
-	if par in RieppiMasau:
-		print("Rieppi e Masau")
-	if par in RieppiDiMaso:
-		print("Rieppi e Di Maso")
-	if par in RieppiPapa:
-		print("Rieppi e Papa")
-	if par in RieppiFurlan:
-		print("Rieppi e Furlan")
-	if par in VescoviColautti:
-		print("Vescovi e Colautti")
-	if par in VescoviZanin:
-		print("Vescovi e Zanin")
-	if par in VescoviManià:
-		print("Vescovi e Manià")
-	if par in VescoviCrachi:
-		print("Vescovi e Crachi")
-	
-	#cercare comandi "break" ed "end"
+    if par in AcetoFurlan:
+        print("Aceto e Furlan")
+    if par in DiMattiaVinci:
+        print("Di Mattia e Vinci")
+    if par in DiMattiaLapira:
+        print("Di Mattia e Lapira")
+    if par in DiMattiaApollo:
+        print("Di Mattia e Apollo")
+    if par in DreossiCrachi:
+        print("Dreossi e Crachi")
+    if par in DreossiColautti:
+        print("Dreossi e Colautti")
+    if par in DreossiZanin:
+        print("Dreossi e Zanin")
+    if par in DreossiAlbaneseMichele:
+        print("Dreossi e Albanese Michele")
+    if par in DreossiFaraone:
+        print("Dreossi e Faraone")
+    if par in MaggioErsetig:
+        print("Maggio e Ersetig")
+    if par in MaggioLeonardi:
+        print("Maggio e Leonardi")
+    if par in MaggioCacciatore:
+        print("Maggio e Cacciatore")
+    if par in MarchesanMatteaBuiatti:
+        print("Marchesan Mattea e Buiatti")
+    if par in MarchesanMatteaGardenal:
+        print("Marchesan Mattea e Gardenal")
+    if par in MarchesanMatteaCrachi:
+        print("Marchesan Mattea e Crachi")
+    if par in MarchesanMatteaColautti:
+        print("Marchesan Mattea e Colautti")
+    if par in MianiBertogna:
+        print("Miani e Bertogna")
+    if par in MianiTerrosi:
+        print("Miani e Terrosi")
+    if par in MianiVassallo:
+        print("Miani e Vassallo")
+    if par in MianiStano:
+        print("Miani e Stano")
+    if par in MorelliFaraone:
+        print("Morelli e Faraone")
+    if par in MorelliGardenal:
+        print("Morelli e Gardenal")
+    if par in MorelliManià:
+        print("Morelli e Manià")
+    if par in MorelliBuiatti:
+        print("Morelli e Buiatti")
+    if par in NazzarenoLapira:
+        print("Nazzareno e Lapira")
+    if par in NazzarenoMarchesanMauro:
+        print("Nazzareno e Marchesan Mauro")
+    if par in NazzarenoManiacco:
+        print("Nazzareno e Maniacco")
+    if par in PierdomenicoApollo:
+        print("Pierdomenico e Apollo")
+    if par in PierdomenicoVinci:
+        print("Pierdomenico e Vinci")
+    if par in PierdomenicoLapira:
+        print("Pierdomenico e Lapira")
+    if par in PierdomenicoMarchesanMauro:
+        print("Pierdomenico e Marchesan Mauro")
+    if par in RieppiMasau:
+        print("Rieppi e Masau")
+    if par in RieppiDiMaso:
+        print("Rieppi e Di Maso")
+    if par in RieppiPapa:
+        print("Rieppi e Papa")
+    if par in RieppiFurlan:
+        print("Rieppi e Furlan")
+    if par in VescoviColautti:
+        print("Vescovi e Colautti")
+    if par in VescoviZanin:
+        print("Vescovi e Zanin")
+    if par in VescoviManià:
+        print("Vescovi e Manià")
+    if par in VescoviCrachi:
+        print("Vescovi e Crachi")
+
+    # cercare comandi "break" ed "end"
