@@ -1,3 +1,5 @@
+
+#!File da eseguire
 #! C:\Users\matti\OneDrive\Desktop\Visual_Studio_Code_Projects\Progetto_Supplenze_con_Giacomino\FlaskApp\__init__.py
 from flask import Flask
 
