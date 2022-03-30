@@ -1,6 +1,6 @@
 
 #!File da eseguire
-#! C:\Users\matti\OneDrive\Desktop\Visual_Studio_Code_Projects\Progetto_Supplenze_con_Giacomino\FlaskApp\__init__.py
+#! C:\Users\matti\OneDrive\Desktop\Visual_Studio_Code_Projects\Progetto_Supplenze_con_Giacomino\FlaskApp
 from flask import Flask
 
 
