@@ -1,13 +1,12 @@
 
 #!File da eseguire
 #! C:\Users\matti\OneDrive\Desktop\Visual_Studio_Code_Projects\Progetto_Supplenze_con_Giacomino\FlaskApp
-from flask import Flask
+from flask import Flask, Blueprint, render_template, url_for
 
 
-def create_app():
-    app = Flask(__name__)
+app = Flask(__name__)
 
-    from .main import main as main_blueprint
-    app.register_blueprint(main_blueprint)
 
-    return app
+@app.route('/')
+def base():
+    return render_template('base.html')
