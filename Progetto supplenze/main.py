@@ -8,6 +8,7 @@ Chiandussi, Coronica, Costessi, Epicoco, Faganel, Floris,
 Iacono, Magno, Selva Mirizzi, Selva Patrizia, Ziccolella
 '''
 
+
 Agazzi = [14, 31, 35, 44, 51]
 Amantea = [43]
 Benes = [12, 15, 24, 42, 43, 44]
@@ -39,31 +40,40 @@ try:
         "In che giorno serve la supplenza? --> Inserisci un giorno della settimana \n\n"))
 except TypeError:
     exit(ErroreD1)
+except ValueError:
+    exit(ErroreD1)
+except SyntaxError:
+    exit(ErroreD1)
 try:
     dom2 = int(input(
         "A che ore serve la supplenza? --> Inserisci un ora, ad esempio 1, 2, 3, ecc. \n\n"))
 except ValueError:
     exit(ErroreD2)
+except TypeError:
+    exit(ErroreD2)
+except SyntaxError:
+    exit(ErroreD2)
+
 
 # Controllo giorno inserito e somma con il numero dell'ora
 ErroreG = "Il giorno inserito non va bene, prova ad inserire un giorno tra lunedì e venerdì"
-try:
-    if dom1 == "Lunedì" or dom1 == "lunedì" or dom1 == "Lunedi" or dom1 == "lunedi":
-        par = 10 + dom2
-    elif dom1 == "Martedì" or dom1 == "martedì" or dom1 == "Martedi" or dom1 == "martedi":
-        par = 20 + dom2
-    elif dom1 == "Mercoldì" or dom1 == "mercoldì" or dom1 == "Mercoldi" or dom1 == "mercoledi":
-        par = 30 + dom2
-    elif dom1 == "Giovedì" or dom1 == "giovedì" or dom1 == "Giovedi" or dom1 == "giovedi":
-        par = 40 + dom2
-    elif dom1 == "Venerdì" or dom1 == "venerdì" or dom1 == "Venerdi" or dom1 == "venerdi":
-        par = 50 + dom2
-except TypeError:
+
+if dom1 == "Lunedì" or dom1 == "lunedì" or dom1 == "Lunedi" or dom1 == "lunedi":
+    par = 10 + dom2
+elif dom1 == "Martedì" or dom1 == "martedì" or dom1 == "Martedi" or dom1 == "martedi":
+    par = 20 + dom2
+elif dom1 == "Mercoldì" or dom1 == "mercoldì" or dom1 == "Mercoldi" or dom1 == "mercoledi":
+    par = 30 + dom2
+elif dom1 == "Giovedì" or dom1 == "giovedì" or dom1 == "Giovedi" or dom1 == "giovedi":
+    par = 40 + dom2
+elif dom1 == "Venerdì" or dom1 == "venerdì" or dom1 == "Venerdi" or dom1 == "venerdi":
+    par = 50 + dom2
+else:
     exit(ErroreG)
 
-    # Stampa a video dei professori disponibili per la supplenza
+# Stampa a video dei professori disponibili per la supplenza
 
-print("")
+    print("")
 
 if par in Agazzi:
     print("Agazzi")
@@ -150,6 +160,7 @@ VescoviCrachi = [53, 54]
 
 dom3 = str(input(
     "Vuoi anche sapere quali professori stanno facendo lezioni in compresenza? \n\n"))
+
 
 print("")
 
