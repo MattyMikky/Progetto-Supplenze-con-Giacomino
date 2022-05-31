@@ -226,4 +226,6 @@ if dom3 == "Sì" or dom3 == "Si" or dom3 == "sì" or dom3 == "si":
         print("Vescovi e Crachi")
 
 
+print("\n\nPremere invio per chiudere il programma.\n\n")
+
 input()
