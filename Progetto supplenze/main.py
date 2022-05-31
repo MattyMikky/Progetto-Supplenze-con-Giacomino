@@ -28,7 +28,7 @@ Ziccolella = [11, 14, 23, 24, 41, 51, 53]
 
 
 dom1 = str(input("In che giorno serve la supplenza? "))
-dom2 = int(input("In che ore serve la supplenza? "))
+dom2 = int(input("A che ore serve la supplenza? "))
 
 par = 0
 
@@ -225,4 +225,5 @@ if dom3 == "Sì" or dom3 == "Si" or dom3 == "sì" or dom3 == "si":
     if par in VescoviCrachi:
         print("Vescovi e Crachi")
 
-    # cercare comandi "break" ed "end"
+
+input("")
