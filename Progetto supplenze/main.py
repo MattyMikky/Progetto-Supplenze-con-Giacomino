@@ -226,4 +226,4 @@ if dom3 == "Sì" or dom3 == "Si" or dom3 == "sì" or dom3 == "si":
         print("Vescovi e Crachi")
 
 
-input("")
+input()
