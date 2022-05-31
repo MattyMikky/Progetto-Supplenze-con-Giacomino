@@ -26,28 +26,45 @@ SelvaMirizzi = [13, 15, 24, 25, 32, 45, 52, 54]
 SelvaPatrizia = [13, 33, 45]
 Ziccolella = [11, 14, 23, 24, 41, 51, 53]
 
-
-dom1 = str(input("In che giorno serve la supplenza? "))
-dom2 = int(input("A che ore serve la supplenza? "))
-
 par = 0
 
-# Controllo giorno inserito e somma con il numero dell'ora
-if dom1 == "Lunedì" or dom1 == "lunedì" or dom1 == "Lunedi" or dom1 == "lunedi":
-    par = 10 + dom2
-elif dom1 == "Martedì" or dom1 == "martedì" or dom1 == "Martedi" or dom1 == "martedi":
-    par = 20 + dom2
-elif dom1 == "Mercoldì" or dom1 == "mercoldì" or dom1 == "Mercoldi" or dom1 == "mercoledi":
-    par = 30 + dom2
-elif dom1 == "Giovedì" or dom1 == "giovedì" or dom1 == "Giovedi" or dom1 == "giovedi":
-    par = 40 + dom2
-elif dom1 == "Venerdì" or dom1 == "venerdì" or dom1 == "Venerdi" or dom1 == "venerdi":
-    par = 50 + dom2
-else:
-    print("Il giorno inserito non va bene")
+# Raccolta dell'input dell'utente
 
-# Stampa a video dei professori disponibili per la supplenza
-print("")
+ErroreD1 = "Non hai inserito un giorno della settimana"
+ErroreD2 = "Inserisci l'ora di supplenza giusta"
+
+try:
+    dom1 = str(input(
+        "In che giorno serve la supplenza? --> Inserisci un giorno della settimana "))
+except TypeError:
+    exit(ErroreD1)
+try:
+    dom2 = int(input(
+        "A che ore serve la supplenza? --> Inserisci un ora, ad esempio 1, 2, 3, ecc. "))
+except ValueError:
+    exit(ErroreD2)
+
+# Controllo giorno inserito e somma con il numero dell'ora
+ErroreG = "Il giorno inserito non va bene, prova ad inserire un giorno tra lunedì e venerdì"
+try:
+    if dom1 == "Lunedì" or dom1 == "lunedì" or dom1 == "Lunedi" or dom1 == "lunedi":
+        par = 10 + dom2
+    elif dom1 == "Martedì" or dom1 == "martedì" or dom1 == "Martedi" or dom1 == "martedi":
+        par = 20 + dom2
+    elif dom1 == "Mercoldì" or dom1 == "mercoldì" or dom1 == "Mercoldi" or dom1 == "mercoledi":
+        par = 30 + dom2
+    elif dom1 == "Giovedì" or dom1 == "giovedì" or dom1 == "Giovedi" or dom1 == "giovedi":
+        par = 40 + dom2
+    elif dom1 == "Venerdì" or dom1 == "venerdì" or dom1 == "Venerdi" or dom1 == "venerdi":
+        par = 50 + dom2
+    else:
+        exit(ErroreG)
+except TypeError:
+
+    # Stampa a video dei professori disponibili per la supplenza
+
+    print("")
+
 if par in Agazzi:
     print("Agazzi")
 if par in Amantea:
@@ -133,12 +150,17 @@ VescoviCrachi = [53, 54]
 
 dom3 = str(input(
     "Vuoi anche sapere quali professori stanno facendo lezioni in compresenza? "))
+
 print("")
 
-# Controllo se la risposto inserita va bene
+
+# Controllo se la risposta inserita va bene
 while dom3 != "Sì" and dom3 != "Si" and dom3 != "sì" and dom3 != "si" and dom3 != "No" and dom3 != "no":
     print('La risposta inserita non va bene. Inserire "si" o "no" ')
-    dom3 = str(input()).upper()
+    dom3 = str(input())
+
+while dom3 != "Sì" and dom3 != "Si" and dom3 != "sì" and dom3 != "si" and dom3 != "No" and dom3 != "no":
+    dom3 = str(input())
 
 # Se viene inserito "No" il programma finisce
 if dom3 == "No" or dom3 == "no":
