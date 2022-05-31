@@ -32,7 +32,7 @@ par = 0
 # Raccolta dell'input dell'utente
 
 ErroreD1 = "Non hai inserito un giorno della settimana"
-ErroreD2 = "Inserisci l'ora di supplenza giusta"
+ErroreD2 = "Inserisci l'ora di supplenza"
 ErroreG = "Il giorno inserito non va bene, prova ad inserire un giorno tra lunedì e venerdì"
 
 try:
