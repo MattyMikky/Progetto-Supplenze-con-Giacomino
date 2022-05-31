@@ -32,15 +32,16 @@ par = 0
 
 ErroreD1 = "Non hai inserito un giorno della settimana"
 ErroreD2 = "Inserisci l'ora di supplenza giusta"
+ErroreG = "Il giorno inserito non va bene, prova ad inserire un giorno tra lunedì e venerdì"
 
 try:
     dom1 = str(input(
-        "In che giorno serve la supplenza? --> Inserisci un giorno della settimana "))
+        "In che giorno serve la supplenza? --> Inserisci un giorno della settimana \n\n"))
 except TypeError:
     exit(ErroreD1)
 try:
     dom2 = int(input(
-        "A che ore serve la supplenza? --> Inserisci un ora, ad esempio 1, 2, 3, ecc. "))
+        "A che ore serve la supplenza? --> Inserisci un ora, ad esempio 1, 2, 3, ecc. \n\n"))
 except ValueError:
     exit(ErroreD2)
 
@@ -57,13 +58,12 @@ try:
         par = 40 + dom2
     elif dom1 == "Venerdì" or dom1 == "venerdì" or dom1 == "Venerdi" or dom1 == "venerdi":
         par = 50 + dom2
-    else:
-        exit(ErroreG)
 except TypeError:
+    exit(ErroreG)
 
     # Stampa a video dei professori disponibili per la supplenza
 
-    print("")
+print("")
 
 if par in Agazzi:
     print("Agazzi")
@@ -149,14 +149,14 @@ VescoviManià = [21, 22, 24, 25, 41, 42, 43]
 VescoviCrachi = [53, 54]
 
 dom3 = str(input(
-    "Vuoi anche sapere quali professori stanno facendo lezioni in compresenza? "))
+    "Vuoi anche sapere quali professori stanno facendo lezioni in compresenza? \n\n"))
 
 print("")
 
 
 # Controllo se la risposta inserita va bene
 while dom3 != "Sì" and dom3 != "Si" and dom3 != "sì" and dom3 != "si" and dom3 != "No" and dom3 != "no":
-    print('La risposta inserita non va bene. Inserire "si" o "no" ')
+    print('La risposta inserita non va bene. Inserire "si" o "no"')
     dom3 = str(input())
 
 while dom3 != "Sì" and dom3 != "Si" and dom3 != "sì" and dom3 != "si" and dom3 != "No" and dom3 != "no":
