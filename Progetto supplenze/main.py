@@ -1,5 +1,4 @@
 # print("Hello Mondus") a caso ahhaha
-# from database import quelche è...
 
 '''
 I professori che hanno ore di supplenza sono:
